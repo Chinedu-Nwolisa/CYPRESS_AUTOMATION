@@ -11,7 +11,7 @@ console.log()
 
 
 
-describe("Login functionality", () => {
+describe("Login function", () => {
     beforeEach(() => {
       cy.visit(locators.URL);
       cy.get(locators.homepageSignin).click();
