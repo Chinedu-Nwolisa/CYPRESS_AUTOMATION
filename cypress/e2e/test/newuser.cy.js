@@ -11,7 +11,7 @@ console.log()
 
 
 
-describe("Login_function", () => {
+describe("Login_functionality", () => {
     beforeEach(() => {
       cy.visit(locators.URL);
       cy.get(locators.homepageSignin).click();
@@ -19,7 +19,7 @@ describe("Login_function", () => {
   
   
     it("User should be able to create an account", () => {
-      cy.get(locators.NewUseremail)type(email)
+      cy.get(locators.NewUseremail).type(email)
       cy.get(locators.RegisterBtn).click()
       cy.get(locators.SelectGender).click()
       cy.get(locators.firstNameField).type(firstName)
